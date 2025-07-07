@@ -28,6 +28,12 @@ spec:
               deprecated: true # See: https://github.com/elastic/package-spec/pull/726
           required:
             - reference
+        docs_structure_enforced:
+          type: boolean
+          description: >
+            Whether or not the package enforces the documentation/README structure.
+            This is used to ensure that the package documentation is consistent.
+          default: false
   required:
     - dependencies
 # JSON patches for newer versions should be placed on top
